@@ -11,6 +11,7 @@
             color: #333;
             margin: 0;
             padding: 20px;
+            
         }
         .container {
             max-width: 600px;
@@ -40,15 +41,37 @@
             margin-top: 20px;
             font-size: 0.9em;
         }
+        .image-container {
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            margin-bottom: 20px; /* 圖片下方的間距 */
+        }
+        .round-image {
+            width: 150px; /* 根據需要調整寬度 */
+            height: 150px; /* 根據需要調整高度 */
+            border-radius: 50%; /* 設置為圓形 */
+            object-fit: cover; /* 確保圖片覆蓋整個區域 */
+            justify-content: center; /* 水平置中 */
+        }
+        table {
+            width: 100%; /* 設置表格的寬度 */
+            table-layout: fixed; /* 固定表格寬度 */
+            border-collapse: collapse; /* 合併邊框 */
+            text-align: left;
+        }
 
     </style>
 </head>
 <body>
 
 <div class="container">
-    <a href="https://www.minecraft.net/zh-hant">
-        <img src="下載.png"/>
-    </a>
+
+    <div class="image-container">
+        <a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki?variant=zh-tw">
+            <img class="round-image" src="poto/下載.png"/>
+        </a>
+    </div>
+
     <h1><small>你好，我是xxx</small></h1> 
     <h2>關於我</h2>
     <p>我是一名學生</p>
@@ -56,8 +79,39 @@
     <h2><mark>教育背景</mark></h2>
     <p>
         <i>目前就讀於<a href="https://www.lhu.edu.tw/">龍華科大</a></i><br/>
-        <em>資網系</em>
+        <em>資網系大三</em>
     </p>
+    <table border="1">
+        <tr>
+            <th colspan="2">學年/學期</th>
+            <th>課程名稱</th>
+            <th>成績</th>
+            <th>備註</th>
+            <th>其他</th>
+        </tr>
+        <tr>
+            <td rowspan="2">113</td>
+            <td rowspan="2">1</td>
+            <td>進階PHP</td>
+            <td>100</td>
+            <td colspan="2" rowspan="4">無</td>
+        </tr>
+        <tr>
+            <td>網路工程</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td rowspan="2">113</td>
+            <td rowspan="2">2</td>
+            <td>課程1</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>課程2</td>
+            <td>100</td>
+        </tr>
+    </table>
+
    <!--- <ul>
         <li></li>
         <li></li>
